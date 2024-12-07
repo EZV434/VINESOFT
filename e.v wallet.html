@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enisoft Wallet</title>
+</head>
+<body>
+<p>Name of Placeholder<p>
+    <input type="text" placeholder="(e.g)John Doe" required>
+    <p>Card Number</p>
+    <div id="inner-input-content">
+        <slot name="inline-prefix"></slot>
+        <input id="input" part="input" autocomplete="off" autofocus="" tabindex="0" type="text" maxlength="" minlength="" inputmode="" aria-label="Card number" aria-invalid="true" aria-errormessage="error">
+        <slot name="inline-suffix"></slot>
+      </div>
+      <div>
+      <label for="payment">Name of card</label>
+      <select id="payment" name="Payment">
+        <option value="ibtc">IBTC Stanbic Bank</option>
+        <option value="moniepoint">Moniepoint</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="giftcard">Gift Card</option>
+            <option value="zenith">Zenith Bank </option>
+            <option value="access">Access Bank</option>
+            <option value="opay">Opay</option>
+      </select>
+      </div>
+      <p>Expiry date</p>
+      <input type="date" id="date" name="date">
+      <input type="button" value="Add">
+</body>
+</html>
